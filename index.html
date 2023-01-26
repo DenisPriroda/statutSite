@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+	<title>Statut</title>
+</head>
+<body>
+	<header>
+		<div class="header_container">
+			<div class="content_container">
+				<div class="header_first_block">
+					<div class="header_info">
+						<div class="icons">
+							<img src="images/Icon.png" class="icon">
+							<p class="header_text">Москва</p>
+						</div>
+						<div class="icons">
+							<img src="images/Icon1.png" class="icon">
+							<p class="header_text">Доставка и оплата</p>
+						</div>
+						<div class="icons">
+							<img src="images/Icon3.png" class="icon">
+							<p class="header_text">Адрес и часы работы</p>
+						</div>
+					</div>
+					<div class="header_contact_block">
+						<div class="icons">
+							<img src="images/Icon2.png" class="icon">
+							<p class="header_text">market@estatut.ru</p>
+						</div>
+						<div class="icons">
+							<img src="images/Icon4.png" class="icon">
+							<p>8 (968) 660-65-50</p>
+						</div>
+						<img src="images/Icon5.png" class="icon">
+					</div>
+				</div>
+			</div>
+			<div class="border"></div>
+			<div class="content_container">
+				<div class="header_second_block">
+					<div>
+						<div class="search_menu_block">
+							<div class="search_block">
+								<img src="images/logo.png" class="site_logo">
+								<input type="text" name="search" class="search" value="Автор, название, ISBN">
+								<button class="search_button">
+									<img src="images/Icon8.png" class="search_button_icon">
+									<p>Искать</p>
+								</button>
+							</div>
+						</div>
+						<div class="header_menu">
+							<div class="menu_icon" onclick="hide()">
+								<img src="images/Interface.png">
+								<p>Каталог</p>
+							</div>
+							<p>Авторы</p>
+							<p>Новинки</p>
+							<div class="menu_icon sale_icon">
+								<img src="images/Icon9.png">
+								<p>Скидки</p>
+							</div>
+							<p>Партнёрам</p>
+							<p>Мы</p>
+						</div>
+					</div>
+					<div class="account">
+						<div class="header_menu_text_icon">
+							<img src="images/Icon10.png" class="header_menu_icon">
+							<p>Отложено</p>
+						</div>
+						<div class="header_menu_text_icon">
+							<img src="images/Icon11.png" class="header_menu_icon">
+							<p>Войти</p>
+						</div>
+						<div class="header_menu_text_icon">
+							<img src="images/Icon12.png" class="header_menu_icon">
+							<p>Корзина</p>
+							<div class="cart_counter hide_cart_counter" id="cart_counter">
+								<p сlass ="counter"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				<div class="opening_catalog_block hide_catalog_block">
+					<div class="opening_catalog_container">
+						<div>
+							<a href="#" class="opening_catalog opening_catalog_title">Детям и родителям</a>
+							<a href="#" class="opening_catalog">Развитие ребенка</a>
+							<a href="#" class="opening_catalog">Досуг и творчество детей</a>
+							<a href="#" class="opening_catalog">Познавательная литература</a>
+							<a href="#" class="opening_catalog">Художественная литература</a>
+							<a href="#" class="opening_catalog">Воспитание детей</a>
+							<a href="#" class="opening_catalog">Комиксы</a>
+							<a href="#" class="opening_catalog opening_catalog_title">Бизнес-литература</a>
+							<a href="#" class="opening_catalog">Бизнес образование</a>
+							<a href="#" class="opening_catalog">Биографии и истории успеха</a>
+							<a href="#" class="opening_catalog">Бухгалтерский учет</a>
+							<a href="#" class="opening_catalog">Инвестиции</a>
+							<a href="#" class="opening_catalog">Индустрии</a>
+						</div>
+						<div>
+							<a href="#" class="opening_catalog">Культура бизнеса</a>
+							<a href="#" class="opening_catalog">Личные финансы</a>
+							<a href="#" class="opening_catalog">Маркетинг и продажи</a>
+							<a href="#" class="opening_catalog">Менеджмент и управление</a>
+							<a href="#" class="opening_catalog">Навыки</a>
+							<a href="#" class="opening_catalog">Налогообложение</a>
+							<a href="#" class="opening_catalog">Недвижимость</a>
+							<a href="#" class="opening_catalog">Недвижимость</a>
+							<a href="#" class="opening_catalog opening_catalog_title">Художественная литература</a>
+							<a href="#" class="opening_catalog">Детективы</a>
+							<a href="#" class="opening_catalog">Ужасы, триллеры</a>
+							<a href="#" class="opening_catalog">Фантастика</a>
+							<a href="#" class="opening_catalog">Фэнтези</a>
+						</div>
+						<div>
+							<a href="#" class="opening_catalog opening_catalog_title">Нехудожественная литература</a>
+							<a href="#" class="opening_catalog">Психология</a>
+							<a href="#" class="opening_catalog">Cаморазвитие</a>
+							<a href="#" class="opening_catalog">История</a>
+							<a href="#" class="opening_catalog">Медицина</a>
+							<a href="#" class="opening_catalog">Публицистика</a>
+							<a href="#" class="opening_catalog">Компьютерные технологии</a>
+							<a href="#" class="opening_catalog">Красота, здоровье и спорт</a>
+							<a href="#" class="opening_catalog">Искусство и культура</a>
+							<a href="#" class="opening_catalog">Дом и хобби</a>
+							<a href="#" class="opening_catalog">Право</a>
+							<a href="#" class="opening_catalog">Научная литература</a>
+							<a href="#" class="opening_catalog">Юмор</a>
+						</div>
+						<div>
+							<a href="#" class="opening_catalog">Культура бизнеса</a>
+							<a href="#" class="opening_catalog">Личные финансы</a>
+							<a href="#" class="opening_catalog">Маркетинг и продажи</a>
+							<a href="#" class="opening_catalog">Менеджмент и управление</a>
+							<a href="#" class="opening_catalog">Навыки</a>
+							<a href="#" class="opening_catalog">Налогообложение</a>
+							<a href="#" class="opening_catalog">Недвижимость</a>
+							<a href="#" class="opening_catalog">Недвижимость</a>
+							<a href="#" class="opening_catalog opening_catalog_title">Художественная литература</a>
+							<a href="#" class="opening_catalog">Детективы</a>
+							<a href="#" class="opening_catalog">Ужасы, триллеры</a>
+							<a href="#" class="opening_catalog">Фантастика</a>
+							<a href="#" class="opening_catalog">Фэнтези</a>
+						</div>
+					</div>
+				</div>
+				<div class="hide_mobile_header" id="hide_mobile_header">
+					<div class="mobile_header ">
+						<div class="mobile_catalog_logo">
+							<button class="mobile_catalog" onclick="hide()">
+								<img src="images/Interface.png">
+							</button>
+							<img src="images/logo.png" class="mobile_site_logo">
+						</div>
+						<div class="mobile_search">
+							<input type="text" name="mobile_search" class="mobile_search_input" value="Что будем искать?">
+							<button class="mobile_seach_button">
+								<img src="images/Icon17.png">
+							</button>
+						</div>
+						<img src="images/Icon12.png" class="mobile_cart">
+					</div>
+				</div>
+		</div>
+	</header>
+	<main>
+		<div class="main_container">
+			<div class="content_container">
+				<div class="main_offers">
+					<div class="main_pics">
+						<div class="slider">
+							<div>
+								<img src="images/Group 1049.png" class="slider_img">
+							</div>
+							<div>
+								<img src="images/Group 1049.png" class="slider_img">
+							</div>
+							<div>
+								<img src="images/Group 1049.png" class="slider_img">
+							</div>
+						</div>
+						<div class="main_pictures">
+							<img src="images/Group 1051.png" class="main_first_pic">
+							<img src="images/Group 1054.png" class="main_second_pic">
+						</div>
+					</div>
+					<div class="book_of_the_day"> 
+						<div class="book_of_the_day_header">
+							<h3>Книга дня</h3>
+							<div class="clock_block">
+								<p class="clock">08:56:31</p>
+							</div>
+						</div>
+						<img src="images/image 213.png" class="book_of_the_day_pic">
+						<div class="book_text">
+							<a href="#" class="book_genre">Корпоративное право</a> <br>
+							<a href="#"><h3 class="book_name">Инвестирование: способы, риски, субъекты : монография</h3></a>
+							<a href="#" class="book_author">Майфат А.В.</a> <br>
+							<a href="#"><h3 class="book_price">4 450 ₽</h3></a>
+						</div>
+						<div class="book_of_the_day_buttons">
+							<button class="cart">
+								<img src="images/Icon13.png" class="cart_img">
+								<p>В корзину</p>
+							</button>
+							<button class="wishlist">
+								<img src="images/Icon10.png" class="wishlist_pic">
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="hide_pics" id="hide_pics">
+					<div class="mobile_pics">
+						<img src="images/Group 1051.png" class="mobile_first_pic">
+						<img src="images/Group 1054.png" class="mobile_second_pic">
+					</div>
+				</div>
+				<div class="new_receiving">
+					<div class = "new_receiving_header">
+						<h2 class="new_receiving_title">Новые поступления</h2>
+						<div class="new_receiving_buttons">
+							<button class="backward_button first_backward_button">
+								<img src="images/Icon15.png" class="arrows">
+							</button>
+							<button class="forward_button first_forward_button ">
+								<img src="images/Icon14.png" class="arrows">
+							</button>
+						</div>
+					</div>
+					<div class="new_receiving_books second_slider">
+						<div class="new_receiving_book">
+							<div class="bestseller">
+								<p>Бестселлер</p>
+							</div>
+							<div class="advantageous_offer">
+								<p>1+1=3</p>
+							</div>
+							<img src="images/image 142.png" class="new_receiving_book_pic">
+							<div class="book_text">
+								<a href="#" class="book_genre">Корпоративное право</a> <br>
+								<a href="#"><h3 class="book_name book_names">Инвестирование: способы, риски, субъекты : монография</h3></a>
+								<a href="#" class="book_author">Майфат А.В.</a> <br>
+								<a href="#"><h3 class="book_price">4 450 ₽</h3></a>
+							</div>
+							<div class="raiting">
+								<div class="stars">
+									<img src="images/Icon Color.png" class="stars_pic">
+									<p>4.9</p>
+								</div>
+								<div class="recomendations">
+									<img src="images/Icon16.png"  class="recomendations_pic">
+									<p>89% рекомендуют</p>
+								</div>
+							</div>
+							<div class="book_of_the_day_buttons">
+							<button class="cart">
+								<img src="images/Icon13.png" class="cart_img">
+								<p>В корзину</p>
+							</button>
+							<button class="wishlist">
+								<img src="images/Icon10.png" class="wishlist_pic">
+							</button>
+						</div>
+						</div>
+						<div class="new_receiving_book">
+							<div class="new">
+								<p>Новинка</p>
+							</div>
+							<img src="images/image 140.png" class="new_receiving_book_pic">
+							<div class="book_text">
+								<a href="#" class="book_genre">Договорное право</a> <br>
+								<a href="#"><h3 class="book_name book_names">Договор коммерческой концессии (франчайзинг). Граж...</h3></a>
+								<a href="#" class="book_author">Багдасарян А.Ф.</a> <br>
+								<a href="#"><h3 class="book_price">372 ₽</h3></a>
+							</div>
+							<div class="raiting">
+								<div class="stars">
+									<img src="images/Icon Color.png" class="stars_pic">
+									<p>4.9</p>
+								</div>
+								<div class="recomendations">
+									<img src="images/Icon16.png"  class="recomendations_pic">
+									<p>89% рекомендуют</p>
+								</div>
+							</div>
+							<div class="book_of_the_day_buttons">
+							<button class="cart">
+								<img src="images/Icon13.png" class="cart_img">
+								<p>В корзину</p>
+							</button>
+							<button class="wishlist">
+								<img src="images/Icon10.png" class="wishlist_pic">
+							</button>
+						</div>
+						</div>
+						<div class="new_receiving_book">
+							<img src="images/image 145.png" class="new_receiving_book_pic">
+							<div class="book_text">
+								<a href="#" class="book_genre">Конкурентное право</a> <br>
+								<a href="#"><h3 class="book_name book_names">Договор коммерческой концессии (франчайзинг). Граж...</h3></a>
+								<a href="#" class="book_author">Башлаков-Николаев И.В.</a> <br>
+								<div class="sale">
+									<a href="#"><h3 class="sale_price">984 ₽</h3></a>
+									<p class="old_price">1 284 ₽</p>
+									<p class="benefit">Выгода 300 ₽</p>
+								</div>
+							</div>
+							<div class="raiting">
+								<div class="stars">
+									<img src="images/Icon Color.png" class="stars_pic">
+									<p>4.9</p>
+								</div>
+								<div class="recomendations">
+									<img src="images/Icon16.png"  class="recomendations_pic">
+									<p>89% рекомендуют</p>
+								</div>
+							</div>
+							<div class="book_of_the_day_buttons">
+							<button class="cart">
+								<img src="images/Icon13.png" class="cart_img">
+								<p>В корзину</p>
+							</button>
+							<button class="wishlist">
+								<img src="images/Icon10.png" class="wishlist_pic">
+							</button>
+						</div>
+						</div>
+						<div class="new_receiving_book">
+							<div class="bestseller">
+								<p>Бестселлер</p>
+							</div>
+							<div class="advantageous_offer">
+								<p>1+1=3</p>
+							</div>
+							<img src="images/image 142.png" class="new_receiving_book_pic">
+							<div class="book_text">
+								<a href="#" class="book_genre">Корпоративное право</a> <br>
+								<a href="#"><h3 class="book_name book_names">Инвестирование: способы, риски, субъекты : монография</h3></a>
+								<a href="#" class="book_author">Майфат А.В.</a> <br>
+								<a href="#"><h3 class="book_price">450 ₽</h3></a>
+							</div>
+							<div class="raiting">
+								<div class="stars">
+									<img src="images/Icon Color.png" class="stars_pic">
+									<p>4.9</p>
+								</div>
+								<div class="recomendations">
+									<img src="images/Icon16.png"  class="recomendations_pic">
+									<p>89% рекомендуют</p>
+								</div>
+							</div>
+							<div class="book_of_the_day_buttons">
+							<button class="cart">
+								<img src="images/Icon13.png" class="cart_img">
+								<p>В корзину</p>
+							</button>
+							<button class="wishlist">
+								<img src="images/Icon10.png" class="wishlist_pic">
+							</button>
+						</div>
+						</div>
+					</div>
+					<div class = "new_receiving_footer">
+						<a href="#" class = "new_receiving_footer_text"> Показать все книги раздела</a>
+					</div>
+				</div>
+				<div class="email_block">
+					<img src="images/Vector 163.png" class="email_block_pic">
+					<p class="email_block_text">Скидка 200 ₽ при подписке на рассылку Издательства</p>
+					<input type="text" name="email" value="Введите ваш Email" class="email_input">
+					<button class="subscribe">
+						<p>Подписаться</p>
+					</button>
+				</div>
+				<div class="new_receiving">
+					<div class = "new_receiving_header">
+						<h2 class="new_receiving_title">Готовятся к выходу</h2>
+						<div class="new_receiving_buttons">
+							<button class="backward_button second_backward_button">
+								<img src="images/Icon15.png" class="arrows">
+							</button>
+							<button class="forward_button second_forward_button">
+								<img src="images/Icon14.png" class="arrows">
+							</button>
+						</div>
+					</div>
+					<div class="new_receiving_books third_slider">
+						<div class="new_receiving_book">
+							<div class="bestseller">
+								<p>Бестселлер</p>
+							</div>
+							<div class="advantageous_offer">
+								<p>1+1=3</p>
+							</div>
+							<img src="images/image 142.png" class="new_receiving_book_pic">
+							<div class="book_text">
+								<a href="#" class="book_genre">Корпоративное право</a> <br>
+								<a href="#"><h3 class="book_name book_names">Инвестирование: способы, риски, субъекты : монография</h3></a>
+								<a href="#" class="book_author">Майфат А.В.</a> <br>
+								<a href="#"><h3 class="book_price">4 450 ₽</h3></a>
+							</div>
+							<div class="raiting">
+								<div class="stars">
+									<img src="images/Icon Color.png" class="stars_pic">
+									<p>4.9</p>
+								</div>
+								<div class="recomendations">
+									<img src="images/Icon16.png"  class="recomendations_pic">
+									<p>89% рекомендуют</p>
+								</div>
+							</div>
+							<div class="book_of_the_day_buttons">
+							<button class="cart">
+								<img src="images/Icon13.png" class="cart_img">
+								<p>В корзину</p>
+							</button>
+							<button class="wishlist">
+								<img src="images/Icon10.png" class="wishlist_pic">
+							</button>
+						</div>
+						</div>
+						<div class="new_receiving_book">
+							<div class="new">
+								<p>Новинка</p>
+							</div>
+							<img src="images/image 140.png" class="new_receiving_book_pic">
+							<div class="book_text">
+								<a href="#" class="book_genre">Договорное право</a> <br>
+								<a href="#"><h3 class="book_name book_names">Договор коммерческой концессии (франчайзинг). Граж...</h3></a>
+								<a href="#" class="book_author">Багдасарян А.Ф.</a> <br>
+								<a href="#"><h3 class="book_price">372 ₽</h3></a>
+							</div>
+							<div class="raiting">
+								<div class="stars">
+									<img src="images/Icon Color.png" class="stars_pic">
+									<p>4.9</p>
+								</div>
+								<div class="recomendations">
+									<img src="images/Icon16.png"  class="recomendations_pic">
+									<p>89% рекомендуют</p>
+								</div>
+							</div>
+							<div class="book_of_the_day_buttons">
+							<button class="cart">
+								<img src="images/Icon13.png" class="cart_img">
+								<p>В корзину</p>
+							</button>
+							<button class="wishlist">
+								<img src="images/Icon10.png" class="wishlist_pic">
+							</button>
+						</div>
+						</div>
+						<div class="new_receiving_book">
+							<img src="images/image 145.png" class="new_receiving_book_pic">
+							<div class="book_text">
+								<a href="#" class="book_genre">Конкурентное право</a> <br>
+								<a href="#"><h3 class="book_name book_names">Договор коммерческой концессии (франчайзинг). Граж...</h3></a>
+								<a href="#" class="book_author">Башлаков-Николаев И.В.</a> <br>
+								<div class="sale">
+									<a href="#"><h3 class="sale_price">984 ₽</h3></a>
+									<p class="old_price">1 284 ₽</p>
+									<p class="benefit">Выгода 300 ₽</p>
+								</div>
+							</div>
+							<div class="raiting">
+								<div class="stars">
+									<img src="images/Icon Color.png" class="stars_pic">
+									<p>4.9</p>
+								</div>
+								<div class="recomendations">
+									<img src="images/Icon16.png"  class="recomendations_pic">
+									<p>89% рекомендуют</p>
+								</div>
+							</div>
+							<div class="book_of_the_day_buttons">
+							<button class="cart">
+								<img src="images/Icon13.png" class="cart_img">
+								<p>В корзину</p>
+							</button>
+							<button class="wishlist">
+								<img src="images/Icon10.png" class="wishlist_pic">
+							</button>
+						</div>
+						</div>
+						<div class="new_receiving_book">
+							<div class="bestseller">
+								<p>Бестселлер</p>
+							</div>
+							<div class="advantageous_offer">
+								<p>1+1=3</p>
+							</div>
+							<img src="images/image 142.png" class="new_receiving_book_pic">
+							<div class="book_text">
+								<a href="#" class="book_genre">Корпоративное право</a> <br>
+								<a href="#"><h3 class="book_name book_names">Инвестирование: способы, риски, субъекты : монография</h3></a>
+								<a href="#" class="book_author">Майфат А.В.</a> <br>
+								<a href="#"><h3 class="book_price">450 ₽</h3></a>
+							</div>
+							<div class="raiting">
+								<div class="stars">
+									<img src="images/Icon Color.png" class="stars_pic">
+									<p>4.9</p>
+								</div>
+								<div class="recomendations">
+									<img src="images/Icon16.png"  class="recomendations_pic">
+									<p>89% рекомендуют</p>
+								</div>
+							</div>
+							<div class="book_of_the_day_buttons">
+							<button class="cart">
+								<img src="images/Icon13.png" class="cart_img">
+								<p>В корзину</p>
+							</button>
+							<button class="wishlist">
+								<img src="images/Icon10.png" class="wishlist_pic">
+							</button>
+						</div>
+						</div>
+					</div>
+					<div class = "new_receiving_footer">
+						<a href="#" class = "new_receiving_footer_text"> Показать все книги раздела</a>
+					</div>
+				</div>
+				<div class="advantages_block">
+					<div class="advantage">
+						<img src="images/image 151.png" class="advantage_pic">
+						<div class="advantage_text">
+							<h3 class="advantage_title">Быстрая доставка</h3>
+							<p class="advantage_description">Доставим бесплатно  от 2000 ₽ по всей России</p>
+						</div>
+					</div>
+					<div class="advantage">
+						<img src="images/image 150.png" class="advantage_pic">
+						<div class="advantage_text">
+							<h3 class="advantage_title">Безопасная оплата</h3>
+							<p class="advantage_description">Плати безопасно и легко онлайн на нашем сайте.</p>
+						</div>
+					</div>
+					<div class="advantage">
+						<img src="images/image 149.png" class="advantage_pic">
+						<div class="advantage_text">
+							<h3 class="advantage_title">Бонусная программа</h3>
+							<p class="advantage_description">Дополнительная скидка 15% при регистрации</p>
+						</div>
+					</div>
+					<div class="advantage">
+						<img src="images/image 152.png" class="advantage_pic">
+						<div class="advantage_text">
+							<h3 class="advantage_title">Большой выбор</h3>
+							<p class="advantage_description">Ежегодно выходит в свет более 100 книг</p>
+						</div>
+					</div>
+				</div>
+				<div class="news_block">
+					<div class = "new_receiving_header">
+						<h2 class="new_receiving_title">Новости</h2>
+						<div class="new_receiving_buttons">
+							<button class="backward_button third_backward_button">
+								<img src="images/Icon15.png" class="arrows">
+							</button>
+							<button class="forward_button third_forward_button">
+								<img src="images/Icon14.png" class="arrows">
+							</button>
+						</div>
+					</div>
+					<div class="news_main fourth_slider">
+						<div class="news">
+							<img src="images/image 214.png" class="news_pic">
+							<p class="news_date">16 июня 2020</p>
+							<h3 class="news_title">Бесплатный онлайн-семинар. Доктрина stare decisis: борьба за прецедент в рос...</h3>
+							<p class="news_text">18 июня в «Клубе цивилистов» пройдет бесплатный онлайн-семинар по проблематике судебного прецедента. Мероприятие приуроч...</p>
+							<button class="news_button">Читать</button>
+						</div>
+						<div class="news">
+							<img src="images/Rectangle 932.png" class="news_pic">
+							<p class="news_date">16 июня 2020</p>
+							<h3 class="news_title">Бесплатный онлайн-семинар. Доктрина stare decisis: борьба за прецедент в рос...</h3>
+							<p class="news_text">18 июня в «Клубе цивилистов» пройдет бесплатный онлайн-семинар по проблематике судебного прецедента. Мероприятие приуроч...</p>
+							<button class="news_button">Читать</button>
+						</div>
+						<div class="news">
+							<img src="images/Rectangle 933.png" class="news_pic">
+							<p class="news_date">16 июня 2020</p>
+							<h3 class="news_title">Бесплатный онлайн-семинар. Доктрина stare decisis: борьба за прецедент в рос...</h3>
+							<p class="news_text">18 июня в «Клубе цивилистов» пройдет бесплатный онлайн-семинар по проблематике судебного прецедента. Мероприятие приуроч...</p>
+							<button class="news_button">Читать</button>
+						</div>
+						<div class="news">
+							<img src="images/image 214.png" class="news_pic">
+							<p class="news_date">16 июня 2020</p>
+							<h3 class="news_title">Бесплатный онлайн-семинар. Доктрина stare decisis: борьба за прецедент в рос...</h3>
+							<p class="news_text">18 июня в «Клубе цивилистов» пройдет бесплатный онлайн-семинар по проблематике судебного прецедента. Мероприятие приуроч...</p>
+							<button class="news_button">Читать</button>
+						</div>
+						<div class="news">
+							<img src="images/Rectangle 932.png" class="news_pic">
+							<p class="news_date">16 июня 2020</p>
+							<h3 class="news_title">Бесплатный онлайн-семинар. Доктрина stare decisis: борьба за прецедент в рос...</h3>
+							<p class="news_text">18 июня в «Клубе цивилистов» пройдет бесплатный онлайн-семинар по проблематике судебного прецедента. Мероприятие приуроч...</p>
+							<button class="news_button">Читать</button>
+						</div>
+						<div class="news">
+							<img src="images/Rectangle 933.png" class="news_pic">
+							<p class="news_date">16 июня 2020</p>
+							<h3 class="news_title">Бесплатный онлайн-семинар. Доктрина stare decisis: борьба за прецедент в рос...</h3>
+							<p class="news_text">18 июня в «Клубе цивилистов» пройдет бесплатный онлайн-семинар по проблематике судебного прецедента. Мероприятие приуроч...</p>
+							<button class="news_button">Читать</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="footer_container">
+			<div class="content_container">
+				<div class="footer_first_block">
+						<img src="images/logo.png" class="footer_logo">
+						<div class="input_block">
+							<input type="text" name="email_sale_input" class="email_sale_input" value="Введите свой Email и получите скидку">
+							<button class="footer_button">
+								<img src="images/shape.png" class="input_pic">
+							</button>
+						</div>
+						<div class="social_networks">
+							<img src="images/Facebook Copy 3.png" class="social_network">
+							<img src="images/Instagram Copy 3.png" class="social_network">
+							<img src="images/Twitter Copy 3.png" class="social_network">
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="header_container">
+			<div class="content_container">
+				<div class="footer_second_block">
+					<div class="footer_second_block_titles">
+						<a href="#" class="footer_second_block_title">Покупателям</a>
+						<a href="#" class="footer_second_block_title">Издательство</a>
+						<a href="#" class="footer_second_block_title">Книги</a>
+						<a href="#" class="footer_second_block_title">Прайс-лист</a>
+						<a href="#" class="footer_second_block_title">Телефон и Email</a>
+					</div>
+					<div class="footer_info_block">
+						<div class="footer_info">
+							<a href="#" class="footer_info_text">Наша почта</a>
+							<a href="#" class="footer_info_text">Оплата и доставка</a>
+							<a href="#" class="footer_info_text">Вопросы и ответы</a>
+						</div>
+						<div class="footer_info">
+							<a href="#" class="footer_info_text">О компании</a>
+							<a href="#" class="footer_info_text">Авторам</a>
+							<a href="#" class="footer_info_text">Вакансии</a>
+							<a href="#" class="footer_info_text">Контакты</a>
+						</div>
+						<div class="footer_info">
+							<a href="#" class="footer_info_text">Все категории</a>
+							<a href="#" class="footer_info_text">Бестселлеры</a>
+							<a href="#" class="footer_info_text">Новинки</a>
+							<a href="#" class="footer_info_text">Скидки и акции</a>
+						</div>
+						<div class="footer_info">
+							<div class="pricelist">
+								<img src="images/shape1.png" class="pricelist_pic">
+								<div>
+								 	<a href="#" class="pricelist_title">Скачать прайс-лист</a>
+								 	<a href="#" class="pricelist_text">PDF, 12 Mb </a>
+								</div>
+							</div>
+						</div>
+						<div class="footer_info">
+							<div class="footer_contact">
+								<img src="images/Icon2.png" class="footer_contact_pic">
+								<a href="#" class="footer_contact_text">market@estatut.ru</a>
+							</div>
+							<div class="footer_contact">
+								<img src="images/Icon4.png" class="footer_contact_pic">
+								<a href="#" class="footer_contact_text">8 (968) 660-65-50</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer_third_block">
+					<a href="#" class="publishing_house">© 2020 Издательство «Статут»</a>
+					<a href="#" class="adress">ул. Лобачевского, 92, корп. 2 119454, г. Москва</a>
+					<a href="#" class="privacy_policy">Политика конфиденциальности</a>
+					<a href="#" class="offer_agreement">Договор оферты</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+		<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+		<script src="slick/slick.min.js"></script>
+		<script src="script.js"></script>
+</body>
+</html>
